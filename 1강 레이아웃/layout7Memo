@@ -1,0 +1,23 @@
+layout6에서 더세분화를 시킴
+
+즉 큰틀에서 4부분으로 나누고 (전체레이아웃)
+또 세부적으로 (세부레이아웃) 으로 나누고
+마지막으로 container(content부분, 중앙)로 나눔 
+
+
+1. header
+header-top 로 나눔
+header-nav 로 나눔
+
+2. banner
+
+3. content
+content1 로 나눔
+content2 로 나눔
+content3 로 나눔
+
+4. footer
+footer-nav  로 나눔
+footer-info 로 나눔
+
+전체적인 틀을 잡을떄는 id를 많이쓰고 세부적으로 반복되는 부분은 class를 많이씀
