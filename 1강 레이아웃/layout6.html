@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout6</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #wrap {
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      #header-wrap {
+        background: #ffe1e4;
+        height: 140px;
+        line-height: 140px;
+      }
+
+      #banner-wrap {
+        background: #fbd6e3;
+        height: 450px;
+        line-height: 450px;
+      }
+
+      #contents-wrap {
+        background: #ead5ee;
+        height: 950px;
+        line-height: 950px;
+      }
+
+      #footer-wrap {
+        background: #d6ebfd;
+        height: 220px;
+        line-height: 220px;
+      }
+
+      .container {
+        width: 1100px;
+        background: rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        height: inherit;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div id="header-wrap">
+        <div class="container">header</div>
+      </div>
+
+      <div id="banner-wrap">
+        <div class="container">banner</div>
+      </div>
+
+      <div id="contents-wrap">
+        <div class="container">contents</div>
+      </div>
+
+      <div id="footer-wrap">
+        <div class="container">footer</div>
+      </div>
+    </div>
+  </body>
+</html>
