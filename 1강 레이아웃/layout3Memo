@@ -1,0 +1,20 @@
+블록포맷컨텍스트
+
+: 부모입장에서 자식을 어디까지 포함해야하나
+
+블록포맷컨텍스트는 다음중하나에 의해서 생성된다.
+
+- float(float이 none이 아닌 요소)
+- overflow가 visible이 아닌 요소
+- 절대위치로 지정된요소 (position이 absolute 또는 fixed인 요소)
+- display inline-blcok 인 요소
+
+
+float을 쓰게되면
+float이 둥둥 띄어지면서 그빈공간을 다른 요소가 치고올라오는데 
+그것을 막기위한 방법 2가지
+
+1. 부모에 overflow :hidden;
+2. 부모에 
+    display:inline-block;
+    width:100%;
