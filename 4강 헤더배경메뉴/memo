@@ -1,0 +1,16 @@
+background : 1.url  2.position  3.repeat
+
+1.경로 2.위치 3.반복여부
+
+display: block or inline-block or inline
+
+inline : 자기컨텐츠크기만큼만차지 ex) a태그
+block : 블록 단위
+inline-block : inline이지만 block의 성질을 갖고있음 , width나 height를 쓸수 있다.
+
+text-align : 블록구조에서만 움직인다.
+display: block 을 쓰거나 inline-block을 써주어야 한다.
+
+inline구조는 padding 값이 먹히지 않기떄문에
+display: block 을 쓰거나 inline-block을 써주어야 한다.
+

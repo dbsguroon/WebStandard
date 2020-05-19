@@ -25,6 +25,7 @@
 }
 
 
+
 /* layout */
 
 #wrap {
@@ -34,7 +35,7 @@
 #header {
     width: 100%;
     height: 325px;
-    background: url(../img/header_bg.jpg) center top repeat-x;
+    background: url(header_bg.jpg) center top repeat-x;
 }
 
 #contents {
@@ -82,7 +83,7 @@
     background: rgba(255, 255, 255, 0.3);
 }
 
-/* 헤더부분 */
+/* header css */
 
 .header .header_menu {
     text-align: right;
@@ -90,7 +91,7 @@
 
 .header .header_menu a {
     color: #fff;
-    padding: 10px 0px 10px 13px;
+    padding: 10px 0 10px 13px;
     display: inline-block;
 }
 
