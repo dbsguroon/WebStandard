@@ -1,0 +1,11 @@
+&amp : 엔티티 코드로 써주는게좋음 (웹표준성위해)
+
+inline은 padding과 마진이 상하는 안먹히고 좌우만 먹힘
+-> inline-block 으로 바꾸어주어야함
+
+google-fonts 사용법
+1. 구글폰트 검색
+2. 원하는 폰트를 고르고
+3. <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 링크를 시켜줌
+4. 폰트패밀리에 원하는 폰트 추가 
+   font-family: 'Nanum Gothic', sans-serif;  

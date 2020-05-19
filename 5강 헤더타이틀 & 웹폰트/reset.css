@@ -31,7 +31,6 @@ form {
 }
 
 /* a 링크 초기화 */
-
 a {
     color: #222;
     text-decoration: none;
@@ -41,7 +40,7 @@ a:hover {
     color: #390;
 }
 
-/* 폰트 초기화 */
+/* 폰트 초기화  */
 body,
 input,
 textarea,

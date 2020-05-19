@@ -11,6 +11,4 @@ inline-block : inline이지만 block의 성질을 갖고있음 , width나 height
 text-align : 블록구조에서만 움직인다.
 display: block 을 쓰거나 inline-block을 써주어야 한다.
 
-inline구조는 padding 값이 먹히지 않기떄문에
-display: block 을 쓰거나 inline-block을 써주어야 한다.
-
+인라인 요소의 패딩과 마진 적용시 상하 값은 블록요소에 영향을 주지 않음(좌우만 적용됨)
