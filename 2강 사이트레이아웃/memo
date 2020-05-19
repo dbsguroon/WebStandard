@@ -1,0 +1,18 @@
+<!doctype html> : html 문서를 쓰겠다.
+<html lang="ko"> : 언어설정
+HEAD : 사이트에 대한 정보
+body : 실제적으로 화면에 보이는부분
+<meta charset="UTF-8"> : 문자 setting을 UTF-8으로 하겠다.
+<meta name="author" content="Publisher Trainee"> : 메타의 이름과 내용을 쓴것임 (저자는 누구인지)
+<meta name="description" content="웹표준을 준수한 사이트"> : 사이트에 대한 설명
+<meta name="kewords" content="웹표준 , 웹접근성"> : 검색엔진에 검색했을때의 키워드
+<meta name="generator" content="Visual Studio"> : 무엇으로 만들었는지
+
+
+<link rel="stylesheet" href="reset.css"> : 스타일을 초기화하는 코드
+<link rel="stylesheet" href="style.css"> : 링크를 통한 스타일 삽입
+
+주의할점 : css는 우선순위가 있기때문에 reset.css -> style.css 순으로 해주어야함
+그래야 reset이 먼저 적용이되고 그다음 style이 적용됨
+
+@charset "utf-8" : css에 적용해야지 한글이 안깨짐
