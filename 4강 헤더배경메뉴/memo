@@ -8,7 +8,7 @@ inline : 자기컨텐츠크기만큼만차지 ex) a태그
 block : 블록 단위
 inline-block : inline이지만 block의 성질을 갖고있음 , width나 height를 쓸수 있다.
 
-text-align : 블록구조에서만 움직인다.
-display: block 을 쓰거나 inline-block을 써주어야 한다.
+text-align : 부모가 블록인 요소에다 주고
+그밑의 자식의 인라인 요소(텍스트,이미지)등을 정렬할때 사용
 
 인라인 요소의 패딩과 마진 적용시 상하 값은 블록요소에 영향을 주지 않음(좌우만 적용됨)
