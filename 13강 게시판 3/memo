@@ -1,0 +1,14 @@
+img 는 position: absolute left 0 , top 0 을 준다음
+기준점으로 li태그에 position:relative를 준다.
+
+그후에 
+
+padding: 8px 0 14px 60px;
+
+이예제에서 span과 strong의 위치를 잡아주게됨
+
+위로 8 , 오른쪽 0 , 아래 14 , 왼쪽 60으로
+
+그렇게 되면 
+span과 strong이 인라인 구조라서 나란히 있게되는데
+display:block 으로 바꾸어준다.
