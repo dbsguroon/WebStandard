@@ -1,0 +1,26 @@
+em 바로가기 태그를 img지 위로 올리려면 
+position을 써주어야함
+기준점을  span 태그로 잡았다.
+
+span에게 기준점을 주고 영역을 잡기위해서는
+ display:block 화 시킬필요가 있다.
+block 화시켜준후 width와 hegiht로 img 크기만큼 영역을 잡아주면된다.
+
+그후에 em 태그에 width:100% height:100%를 써주면 영역이 잡히게 된다.
+
+바로가기 글자와 와이어프레임,스케치작업,UI디자인의 글자를 가운데 정렬시키기위해
+부모박스인 li에게 text-aling:center를 주면
+li 밑에있는 em이나 strong 태그들이 가운데로 정렬을 하게 된다.
+
+그리고 바로가기 글자의 가운데수직정렬을 위해 span 태그에 line-height를 높이만큼준다.
+
+마지막으로 visibility:hidden 은 눈앞에 보이지 않는 속성인데
+em 태그에 이속성을 주고 
+span태그에 hover 됐을때 em 태그에 visibility:visible을 주게되면은
+
+이미지에 마우스를 올렸을때 이미지 가운데에 약간투명도가 있는 검은색 배경의 바로가기 글자를 볼수가 있다.
+
+--------------------------------
+
+참고로 inline구조는 좌우는 padding이먹는데 상하가 padding이 먹질 않으니
+inline-block으로 display를 바꾸어주어야 먹는다.
