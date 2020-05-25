@@ -1,0 +1,35 @@
+<address> 태그는 문서나 글의 저자 또는 회사와 연락할 수 있는 정보를 명시할 때 사용합니다.
+
+float:left를 쓰게되면 
+text-align은 먹히질 않는다.
+
+그래서 li태그에 display:inline을 썼다.
+
+------------------------------------------------------------
+
+사이트 도움말 과 사이트 이용약관 이사이에 | 처럼 바를 만들수가 있는데
+이미지로 넣을수도 있고 다음과 같은 방법으로 만들수 있다.
+
+가상요소를 써서 바를 만드는 방법으로
+
+ul li{
+    position:relative;
+}
+
+ul li:before{
+    content:'';
+    width : 1px ; 
+    height: 12px;
+    background:#ccc;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+-> li태그 전에 content를 넣을 것인데
+   width와 height로 bar 모양을 잡고 
+   배경색으로 색깔을 넣어주어서 보이게 하고
+   기준점이될 위치를 잡은후
+   position:absolute로 정확한 위치를 잡으면된다.
+
+
