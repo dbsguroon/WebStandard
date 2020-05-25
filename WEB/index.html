@@ -558,6 +558,17 @@
             </div>
         </div>
     </div>
+
+    <!--스크립트-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(".tit .btn").click(function (e) {
+            e.preventDefault();
+            $("#cont_nav").slideToggle(500);
+            /* 단추 버튼이 위아래로 바뀜 */
+            $(this).toggleClass(on);
+        });
+    </script>
 </body>
 
 </html>
