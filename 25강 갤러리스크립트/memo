@@ -1,0 +1,42 @@
+갤러리 스크립트도 마찬가지로 slick을 쓰면된다.
+
+1. 구조를 잡아준다.
+<div class="your-class">
+  <div>your content</div>
+  <div>your content</div>
+  <div>your content</div>
+</div>
+
+2. $(".gallery_img").slick(); // 파일 호출
+-> 즉 잘작동이되는지 확인
+
+3. 버튼 부분에도 구조를 잡아준다.
+
+<div class="your-class">
+  <div>your content</div>
+  <div>your content</div>
+  <div>your content</div>
+</div>
+
+4. 버튼과 slick 을 연결한다 (slick의 메소드부분에 나와있음)
+
+$('.your-element').slick('setPosition'); 만든 요소에 setPosition값을 넣어주면 연결됨
+
+ $(".play").click(function () {
+      $(".gallery_img").slick('slickPlay');
+    })
+
+
+    play 버튼을 눌렀을때
+    이미지가 슬릭되는것 
+
+5. 마지막으로 속성값들을 넣어준다.
+
+ arrows: false : next,prev 버튼을 생성할것인지
+ fade: true  : 이미지를 서서히 움직이게하는것
+ pauseOnHover: true :마우스가 호버됐을때 재생중단
+ infinite: true  :무한반복
+ autoplay: true  : 자동재생
+ autoplaySpeed: 3000  :자동재생속도
+ speed: 300  : 화면전환속도
+ slidesToShow: 1 : 슬라이드를 하나씩보여줌
