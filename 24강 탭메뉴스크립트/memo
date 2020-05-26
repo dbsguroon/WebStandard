@@ -1,0 +1,29 @@
+var 변수 :  데이터를 저장하는 저장소라고 생각
+
+
+
+var $tab_list = $(".tab_menu");   // 탭메뉴 클래스를 탭리스트라는 변수에 저장
+
+$tab_list.find("ul ul").hide()   //  전체해석 tab_menu 에 ul 밑에 있는 모든 ul을 숨겨라
+
+$tab_list.find("li.active > ul").show()  // 전체해석 tab_menu 에 li태그에 active라는 클래스를 먼저찾고 그 밑에 있는 자식 Ul을 찾아라
+
+function tabMenu(e){
+  e.preventDefault();
+  var $this = $(this); // 버튼을 클릭했을때 버튼의 타켓이 $this에 저장됨
+  $this.next("ul").show().parent("li").addClass("active").siblings("li").removeClass("active").find(">ul").hide();
+}
+
+$this = a링크태그임
+a태그 옆에 ul태그를 보여주고 부모의 li에 active 클래스를 추가하고 그리고 형제의 li에 active 클래스를 지워주고
+그밑에 ul을 숨긴다.
+(있는 그대로해석하면됨)
+
+$tab_list.find(ul>li>a).click(tabMenu).focus(tabMenu);
+
+즉 공지사항 1, 공지사항2 ,공지사항3 라고 되어있는 a 태그를 클릭했을때
+tabMenu함수를 실행해라 
+
+focus를 주는 이유는 웹접근성을 지키기 위함이라고 보면되는데
+즉 공지사항1 포커스가고 공지사항1 컨텐츠 읽고 공지사항2 포커스가고 공지사항2 컨텐츠 읽고
+이렇게 순차적으로 포커스가 가게됨 (정확한 작동원리는 이해안됨)

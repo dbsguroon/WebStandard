@@ -431,7 +431,7 @@
                                     </li>
                                     <li>
                                         <a href="#">공지사항2</a>
-                                        <ul style="display: none;">
+                                        <ul>
                                             <li>
                                                 <a href="#">두 번째 공지사항 탭메뉴 테스트 목록입니다.</a>
                                             </li>
@@ -445,7 +445,7 @@
                                     </li>
                                     <li>
                                         <a href="#">공지사항3</a>
-                                        <ul style="display: none;">
+                                        <ul>
                                             <li>
                                                 <a href="#">세 번째 공지사항 탭메뉴 테스트 목록입니다.</a>
                                             </li>
@@ -579,6 +579,23 @@
     <!--slick scrupt-->
     <script src="js/slick.min.js"></script>
     <script type="text/javascript">
+        /* 탭메뉴 */
+        var $tab_list = $(".tab_menu");
+        $tab_list.find("ul ul").hide();
+        $tab_list.find("li.active > ul").show();
+
+        function tab_Menu(e) {
+            e.preventDefault();
+            var $this = $(this);
+            $this.next("ul").show().parent("li").addClass("active").siblings("li").removeClass("active").find(">ul")
+                .hide();
+        }
+
+        $tab_list.find("ul>li>a").click(tab_Menu).focus(tab_Menu);
+
+
+
+
         /* 배너 */
         $('.ban').slick({
             infinite: false,
@@ -588,8 +605,6 @@
             // autoplay: false,
             // autospeed: 3000,
         });
-
-
 
         /* 전체 메뉴 */
         $(".tit .btn").click(function (e) {
