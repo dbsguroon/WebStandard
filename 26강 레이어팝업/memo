@@ -1,0 +1,23 @@
+팝업에는 두종류가 있다.
+
+1. 레이어 팝업
+2. 윈도우 팝업
+
+/* offset-x | offset-y | blur-radius | color */
+box-shadow: 10px 5px 5px black;
+
+x축값 , y축값 (양수,음수 가능) 
+blur-radius :  크면 클 수록 그림자 테두리가 흐려지므로 크기는 더 커지고 색은 더 밝아집니다. 
+음수 값은 사용할 수 없습니다. 
+마지막은 색깔임
+
+
+position:fixed는 HTML 기준으로 움직임
+
+position 속성이 absolute인 경우, 컨테이닝 블록은 position 속성 값이 static이 아닌(fixed, absolute, relative, sticky) 가장 가까운 조상의 내부 여백 영역입니다.
+
+
+이미지는 인라인 구조 이기 떄문에 이미지사이공간이 뜸
+그래서 display:block을 바꾸어주면 해결됨
+display:block을 쓸수 없는 상황이 면 height 값을 주면됨
+
